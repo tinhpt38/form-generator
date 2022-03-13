@@ -17,7 +17,7 @@ export const inputComponents = [
   {
     // 组件的自定义配置
     __config__: {
-      label: '单行文本',
+      label: 'Single Line',
       labelWidth: null,
       showLabel: true,
       changeTag: true,
@@ -37,7 +37,7 @@ export const inputComponents = [
       append: ''
     },
     // 其余的为可直接写在组件标签上的属性
-    placeholder: '请输入',
+    placeholder: 'Please Enter ',
     style: { width: '100%' },
     clearable: true,
     'prefix-icon': '',
@@ -49,7 +49,7 @@ export const inputComponents = [
   },
   {
     __config__: {
-      label: '多行文本',
+      label: 'Multi-line',
       labelWidth: null,
       showLabel: true,
       tag: 'el-input',
@@ -63,7 +63,7 @@ export const inputComponents = [
       document: 'https://element.eleme.cn/#/zh-CN/component/input'
     },
     type: 'textarea',
-    placeholder: '请输入',
+    placeholder: 'Please Enter ',
     autosize: {
       minRows: 4,
       maxRows: 4
@@ -76,7 +76,7 @@ export const inputComponents = [
   },
   {
     __config__: {
-      label: '密码',
+      label: 'Password',
       showLabel: true,
       labelWidth: null,
       changeTag: true,
@@ -93,7 +93,7 @@ export const inputComponents = [
       prepend: '',
       append: ''
     },
-    placeholder: '请输入',
+    placeholder: 'Please Enter ',
     'show-password': true,
     style: { width: '100%' },
     clearable: true,
@@ -106,7 +106,7 @@ export const inputComponents = [
   },
   {
     __config__: {
-      label: '计数器',
+      label: 'Counter',
       showLabel: true,
       changeTag: true,
       labelWidth: null,
@@ -129,8 +129,9 @@ export const inputComponents = [
     disabled: false
   },
   {
+    // dịch thằng này
     __config__: {
-      label: '编辑器',
+      label: 'Editor',
       showLabel: true,
       changeTag: true,
       labelWidth: null,
@@ -143,7 +144,7 @@ export const inputComponents = [
       regList: [],
       document: 'http://tinymce.ax-z.cn'
     },
-    placeholder: '请输入',
+    placeholder: 'Please Enter ',
     height: 300, // 编辑器高度
     branding: false // 隐藏右下角品牌烙印
   }
@@ -153,7 +154,7 @@ export const inputComponents = [
 export const selectComponents = [
   {
     __config__: {
-      label: '下拉选择',
+      label: 'Drop-down',
       showLabel: true,
       labelWidth: null,
       tag: 'el-select',
@@ -167,14 +168,14 @@ export const selectComponents = [
     },
     __slot__: {
       options: [{
-        label: '选项一',
+        label: 'Option 1',
         value: 1
       }, {
-        label: '选项二',
+        label: 'Option 2',
         value: 2
       }]
     },
-    placeholder: '请选择',
+    placeholder: 'Please choose option ',
     style: { width: '100%' },
     clearable: true,
     disabled: false,
@@ -183,7 +184,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '级联选择',
+      label: 'Cascade selection',
       url: 'https://www.fastmock.site/mock/f8d7a54fb1e60561e2f720d5a810009d/fg/cascaderList',
       method: 'get',
       dataPath: 'list',
@@ -204,14 +205,14 @@ export const selectComponents = [
     options: [{
       id: 1,
       value: 1,
-      label: '选项1',
+      label: 'Option 1',
       children: [{
         id: 2,
         value: 2,
-        label: '选项1-1'
+        label: 'Option 1-1'
       }]
     }],
-    placeholder: '请选择',
+    placeholder: 'Please choose',
     style: { width: '100%' },
     props: {
       props: {
@@ -229,7 +230,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '单选框组',
+      label: 'Radio Group',
       labelWidth: null,
       showLabel: true,
       tag: 'el-radio-group',
@@ -246,10 +247,10 @@ export const selectComponents = [
     },
     __slot__: {
       options: [{
-        label: '选项一',
+        label: 'Option 1',
         value: 1
       }, {
-        label: '选项二',
+        label: 'Option 2',
         value: 2
       }]
     },
@@ -259,7 +260,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '多选框组',
+      label: 'Multi-select',
       tag: 'el-checkbox-group',
       tagIcon: 'checkbox',
       defaultValue: [],
@@ -276,10 +277,10 @@ export const selectComponents = [
     },
     __slot__: {
       options: [{
-        label: '选项一',
+        label: 'Option 1',
         value: 1
       }, {
-        label: '选项二',
+        label: 'Option 2',
         value: 2
       }]
     },
@@ -291,7 +292,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '开关',
+      label: 'Switch',
       tag: 'el-switch',
       tagIcon: 'switch',
       defaultValue: false,
@@ -315,7 +316,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '滑块',
+      label: 'Slider',
       tag: 'el-slider',
       tagIcon: 'slider',
       defaultValue: null,
@@ -337,7 +338,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '时间选择',
+      label: 'Time picker',
       tag: 'el-time-picker',
       tagIcon: 'time',
       defaultValue: null,
@@ -350,7 +351,7 @@ export const selectComponents = [
       changeTag: true,
       document: 'https://element.eleme.cn/#/zh-CN/component/time-picker'
     },
-    placeholder: '请选择',
+    placeholder: 'Please choose ',
     style: { width: '100%' },
     disabled: false,
     clearable: true,
@@ -362,7 +363,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '时间范围',
+      label: 'Time limit',
       tag: 'el-time-picker',
       tagIcon: 'time-range',
       span: 24,
@@ -379,15 +380,15 @@ export const selectComponents = [
     disabled: false,
     clearable: true,
     'is-range': true,
-    'range-separator': '至',
-    'start-placeholder': '开始时间',
-    'end-placeholder': '结束时间',
+    'range-separator': 'to',
+    'start-placeholder': 'Start Time',
+    'end-placeholder': 'End Time',
     format: 'HH:mm:ss',
     'value-format': 'HH:mm:ss'
   },
   {
     __config__: {
-      label: '日期选择',
+      label: 'Date Picker',
       tag: 'el-date-picker',
       tagIcon: 'date',
       defaultValue: null,
@@ -400,7 +401,7 @@ export const selectComponents = [
       changeTag: true,
       document: 'https://element.eleme.cn/#/zh-CN/component/date-picker'
     },
-    placeholder: '请选择',
+    placeholder: 'Please choose ',
     type: 'date',
     style: { width: '100%' },
     disabled: false,
@@ -411,7 +412,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '日期范围',
+      label: 'Date limit',
       tag: 'el-date-picker',
       tagIcon: 'date-range',
       defaultValue: null,
@@ -426,9 +427,9 @@ export const selectComponents = [
     },
     style: { width: '100%' },
     type: 'daterange',
-    'range-separator': '至',
-    'start-placeholder': '开始日期',
-    'end-placeholder': '结束日期',
+    'range-separator': 'to',
+    'start-placeholder': 'Start Time',
+    'end-placeholder': 'End Time',
     disabled: false,
     clearable: true,
     format: 'yyyy-MM-dd',
@@ -437,7 +438,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '评分',
+      label: 'Rate',
       tag: 'el-rate',
       tagIcon: 'rate',
       defaultValue: 0,
@@ -459,7 +460,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '颜色选择',
+      label: 'Colors',
       tag: 'el-color-picker',
       tagIcon: 'color',
       span: 24,
@@ -479,7 +480,7 @@ export const selectComponents = [
   },
   {
     __config__: {
-      label: '上传',
+      label: 'Upload',
       tag: 'el-upload',
       tagIcon: 'upload',
       layout: 'colFormItem',
@@ -489,7 +490,7 @@ export const selectComponents = [
       required: true,
       span: 24,
       showTip: false,
-      buttonText: '点击上传',
+      buttonText: 'Upload',
       regList: [],
       changeTag: true,
       fileSize: 2,
@@ -515,7 +516,7 @@ export const layoutComponents = [
     __config__: {
       layout: 'rowFormItem',
       tagIcon: 'row',
-      label: '行容器',
+      label: 'Container',
       layoutTree: true,
       document: 'https://element.eleme.cn/#/zh-CN/component/layout#row-attributes'
     },
@@ -525,7 +526,7 @@ export const layoutComponents = [
   },
   {
     __config__: {
-      label: '按钮',
+      label: 'Button',
       showLabel: true,
       changeTag: true,
       labelWidth: null,
@@ -536,7 +537,7 @@ export const layoutComponents = [
       document: 'https://element.eleme.cn/#/zh-CN/component/button'
     },
     __slot__: {
-      default: '主要按钮'
+      default: 'Main Button'
     },
     type: 'primary',
     icon: 'el-icon-search',
@@ -559,7 +560,7 @@ export const layoutComponents = [
       showLabel: true,
       changeTag: true,
       labelWidth: null,
-      label: '表格[开发中]',
+      label: 'Table [Development]',
       dataType: 'dynamic',
       method: 'get',
       dataPath: 'list',
@@ -572,7 +573,7 @@ export const layoutComponents = [
           renderKey: 15957617660153
         },
         prop: 'date',
-        label: '日期'
+        label: 'Date'
       }, {
         __config__: {
           layout: 'raw',
@@ -580,7 +581,7 @@ export const layoutComponents = [
           renderKey: 15957617660152
         },
         prop: 'address',
-        label: '地址'
+        label: 'Address'
       }, {
         __config__: {
           layout: 'raw',
@@ -588,7 +589,7 @@ export const layoutComponents = [
           renderKey: 15957617660151
         },
         prop: 'name',
-        label: '名称'
+        label: 'Name'
       }, {
         __config__: {
           layout: 'raw',
@@ -597,14 +598,14 @@ export const layoutComponents = [
           children: [
             {
               __config__: {
-                label: '按钮',
+                label: 'Button',
                 tag: 'el-button',
                 tagIcon: 'button',
                 layout: 'raw',
                 renderKey: 1595779809901
               },
               __slot__: {
-                default: '主要按钮'
+                default: 'Main Button'
               },
               type: 'primary',
               icon: 'el-icon-search',
@@ -613,7 +614,7 @@ export const layoutComponents = [
             }
           ]
         },
-        label: '操作'
+        label: 'Operater'
       }]
     },
     data: [],
