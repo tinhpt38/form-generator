@@ -340,7 +340,7 @@
           </template>
 
           <template v-if="['el-cascader', 'el-table'].includes(activeData.__config__.tag)">
-            <el-divider>选项</el-divider>
+            <el-divider>Option</el-divider>
             <el-form-item v-if="activeData.__config__.dataType" label="type of data">
               <el-radio-group v-model="activeData.__config__.dataType" size="small">
                 <el-radio-button label="dynamic">
