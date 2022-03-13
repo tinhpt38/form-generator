@@ -399,7 +399,7 @@ export const selectComponents = [
       required: true,
       regList: [],
       changeTag: true,
-      document: 'https://element.eleme.cn/#/zh-CN/component/date-picker'
+      document: 'https://element.eleme.cn/#/en-US/component/date-picker'
     },
     placeholder: 'Please choose ',
     type: 'date',
